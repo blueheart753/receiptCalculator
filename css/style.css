@@ -6,14 +6,6 @@
 
 body {
   height: 100vh;
-  background-image: linear-gradient(
-    to right bottom,
-    #051937,
-    #004a7c,
-    #0082a1,
-    #00b98d,
-    #12eb41
-  );
 }
 
 header {
@@ -30,6 +22,7 @@ h2 {
 .accent {
   display: flex;
   height: 100px;
+  align-items: center;
   justify-content: center;
   font-size: 1.2em;
   position: relative;
@@ -38,5 +31,34 @@ h2 {
 
 .accent > input {
   margin-left: 20px;
-  height: 2em;
+  height: 3em;
+}
+
+.calculator {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: 10%;
+}
+
+.calculator input {
+  width: 20vw;
+  height: 4vh;
+  margin-top: 20px;
+}
+
+#submit {
+  border: 0;
+  width: 100px;
+  height: 40px;
+  margin-left: 40px;
+  border-radius: 4px;
+}
+
+.calculate {
+  border: 0;
+  border-radius: 4px;
+  height: 4em;
+  width: 10em;
 }
